@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="test.js"></script>
+    <script src="fib/fib.js"></script>
+    <script src="multiplechoice/multichoice.js"></script>
+    <script src="pages/page.js"></script>
+    <script src="builder/builder.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
+
+
+
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="row">
+        <div class="col s12 m7">
+            <div class="card">
+                <div class="card-image">
+                    <img src="images/cover.jpg">
+                    <span class="card-title">Tiger Conservation</span>
+                </div>
+                <div class="card-content">
+                    <p>The tiger is an iconic species. Tiger conservation attempts to prevent the animal from becoming
+                        extinct and preserving its natural habitat.</p>
+                </div>
+                <div class="card-action">
+                    <a class="waves-effect waves-light btn">Start</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="player"></div>
+
+    <script>
+        var obj = new builder(jsondata);
+        obj.buildOn(document.getElementById('player'));
+    </script>
+</body>
+
+</html>
