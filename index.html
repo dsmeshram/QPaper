@@ -22,30 +22,60 @@
 </head>
 
 <body>
-    <div class="row">
-        <div class="col s12 m7">
-            <div class="card">
-                <div class="card-image">
-                    <img src="images/cover.jpg">
-                    <span class="card-title">Tiger Conservation</span>
-                </div>
-                <div class="card-content">
-                    <p>The tiger is an iconic species. Tiger conservation attempts to prevent the animal from becoming
-                        extinct and preserving its natural habitat.</p>
-                </div>
-                <div class="card-action">
-                    <a class="waves-effect waves-light btn">Start</a>
+    <div class="container-fluid" id="coverPage">
+        <div class="row">
+            <div class="col s12 m10 push-m1">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/cover.jpg">
+                        <span class="card-title">Current Affairs MCQ for UPSC Exams - 15 October 2018</span>
+                    </div>
+                    <div class="card-content right">
+                        <p>The tiger is an iconic species. Tiger conservation attempts to prevent the animal from
+                            becoming
+                            extinct and preserving its natural habitat.</p>
+                    </div>
+                    <div class="card-action">
+                        <div class="progress" id="progressBar">
+                            <div class="indeterminate"></div>
+                        </div>
+                        <span>
+                            Author : J S S
+                        </span>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
 
-    <div id="player"></div>
+    <div id="player" class="container-fluid"></div>
 
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col s12 m10 push-m1">
+                <a class="waves-effect waves-light btn right" id="startBtn">Start Test</a>
+            </div>
+        </div>
+    </div>
     <script>
-        var obj = new builder(jsondata);
-        obj.buildOn(document.getElementById('player'));
+        window.onload = function () {
+            document.getElementById('startBtn').addEventListener('click',startTest);
+        }
+        function startTest() {
+            document.getElementById('progressBar').style.display = 'block';
+            document.getElementById('startBtn').style.display = 'none';
+            document.getElementById('startBtn').removeEventListener('click',startTest);
+
+            window.setTimeout(function () {
+                document.getElementById('coverPage').style.display = 'none';
+                var obj = new builder(jsondata);
+                obj.buildOn(document.getElementById('player'));
+                document.getElementById('startBtn').addEventListener('click',builder.loadNextPage);
+                document.getElementById('startBtn').innerHTML = 'Next';
+                document.getElementById('startBtn').style.display = 'inline-block';
+            }, 1000);
+        }
     </script>
 </body>
 
