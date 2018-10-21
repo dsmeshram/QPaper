@@ -4,9 +4,13 @@ input{
 
 body{
     background-color: #F1F1F1;  
+    padding-top: 20px;
 }
 
-.question{
+.card .card-action a {
     color: #F1F1F1;
-    margin: 0.5rem 0;
+}
+
+.progress {
+    display: none;
 }

@@ -6,9 +6,11 @@ multichoice.prototype.setmultichoicedata = function(text){
 
     this.input = "<input type='text'/>";
     var option = "";
-    var card = "<div class='row'> <div class='col s12 m7'> <div class=card>"+ 
-    "<div class=card-content>#CONTENT</div> </div> </div></div>"
-    var parentwrapper = "<div class = 'row'><div class = 'input-field col s12'>#CHILD</div></div>"
+    
+    var card = "<div class='row'> <div class='col s12 m10 push-m1'> <div class=card>"+ 
+    "<div class=card-content>#CONTENT</div> </div> </div></div>";
+
+    var parentwrapper = "<div class = 'row'><div class = 'input-field col s12'>#CHILD</div></div>";
 
     for(var i=0;i<text.options.length;i++){
         var newoption = text.options[i].text;
