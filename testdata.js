@@ -7,7 +7,7 @@ var data = {
     "pages":[
         {
             "id":0,
-            "type":"launch",
+            "type":"cover",
             "backgroundcolor":"#ffffff",
             "textcolor":"#000000",
             "coverimages" :"",
@@ -22,21 +22,21 @@ var data = {
             "type":"mcq",
             "correctanswer":1,
             "question":{
-                "question":"How many varieties of tiger found in india?",
+                "question":"Which of the following rivers does not flow into the Arabian Sea?",
                 "options":[
                     {
                         "id":1,
-                        "option":"9"
+                        "option":"Tungabhadra"
                     },
                     {
                         "id":2,
-                        "option":"8"
+                        "option":"Sabarmati"
                     },{
                         "id":3,
-                        "option":"7"
+                        "option":"Mandovi"
                     },{
                         "id":4,
-                        "option":"non of the above"
+                        "option":"Narmada"
                     }
                 ]
             }
@@ -45,44 +45,67 @@ var data = {
             "type":"mcq",
             "correctanswer":1,
             "question":{
-                "question":"Tiger reserve program started in india?",
+                "question":"Which of the following is the highest peak of Satpura Range?",
                 "options":[
                     {
                         "id":1,
-                        "option":"1900"
+                        "option":"Gurushikhar"
                     },
                     {
                         "id":2,
-                        "option":"1800"
+                        "option":"Dhupgarh"
                     },{
                         "id":3,
-                        "option":"1870"
+                        "option":"Pachmarhi"
                     },{
                         "id":4,
-                        "option":"non of the above"
+                        "option":"Mahendragiri"
                     }
                 ]
             }
-        },,{
+        },{
             "id":102,
             "type":"mcq",
             "correctanswer":1,
             "question":{
-                "question":"Which on is biggers tiger reserve in india?",
+                "question":"The Thummalapalle mine which is considered to have one of the world’s largest reserves of 1.50 lakh tonnes of uranium is located in which among the following Indian States?",
                 "options":[
                     {
                         "id":1,
-                        "option":"Tadoba(Maharastra)"
+                        "option":"Karnataka"
                     },
                     {
                         "id":2,
-                        "option":"Kajiranga(Assam)"
+                        "option":"Andhra Pradesh"
                     },{
                         "id":3,
-                        "option":"Jim Corbet(Arunachal pradesh)"
+                        "option":"Tamil Nadu"
                     },{
                         "id":4,
-                        "option":"non of the above"
+                        "option":"Kerala"
+                    }
+                ]
+            }
+        },{
+            "id":102,
+            "type":"mcq",
+            "correctanswer":1,
+            "question":{
+                "question":" Tropic of Cancer passes through which of the following group of Indian States:",
+                "options":[
+                    {
+                        "id":1,
+                        "option":"Gujarat, MP, Chattisgarh, Manipur"
+                    },
+                    {
+                        "id":2,
+                        "option":"Rajasthan, Jharkhand, West Bengal, Mizoram"
+                    },{
+                        "id":3,
+                        "option":"UP, MP, Bihar, Jharkhand"
+                    },{
+                        "id":4,
+                        "option":"Maharashtra, Chattisgarh, Orissa, Andhra Pradesh"
                     }
                 ]
             }

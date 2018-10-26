@@ -4,12 +4,14 @@
 <head>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="test.js"></script>
+    <script src="testdata.js"></script>
     <script src="fib/fib.js"></script>
     <script src="multiplechoice/multichoice.js"></script>
     <script src="pages/page.js"></script>
     <script src="builder/builder.js"></script>
+
     <link rel="stylesheet" href="style.css">
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
@@ -69,7 +71,7 @@
 
             window.setTimeout(function () {
                 document.getElementById('coverPage').style.display = 'none';
-                var obj = new builder(jsondata);
+                var obj = new builder(data);
                 obj.buildOn(document.getElementById('player'));
                 document.getElementById('startBtn').addEventListener('click',builder.loadNextPage);
                 document.getElementById('startBtn').innerHTML = 'Next';

@@ -64,7 +64,7 @@ loadFinishPage = function () {
 
 builder.prototype.loadPage = function (number) {
     // accepts numbers as input and display appropriate question if a valid number;
-    if (builder.domElement && builder.domElement.id && !isNaN(number) && number < builder.pageList.length && number >= 0) {
+    if (builder.domElement && builder.domElement.id && !isNaN(number) && number < builder.pages.length && number >= 0) {
         console.log('fetching page number : ' + number);
         builder.domElement.innerHTML = builder.pageList[number];
     } else {

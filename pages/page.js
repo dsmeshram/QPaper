@@ -5,9 +5,18 @@ var page = function(pagesjson){
     if(pagesjson.hasOwnProperty('fib')){
         this.setfibdata(pagesjson.fib);
     }
-    if(pagesjson.hasOwnProperty('multiplechoice')){
-        this.setmultiplechoicequestiondata(pagesjson.multiplechoice);
-    }  
+    if(pagesjson.hasOwnProperty('type') && pagesjson.type == 'mcq'){
+        this.setmultiplechoicequestiondata(pagesjson);
+    } 
+    if(pagesjson.hasOwnProperty('cover')){
+
+    } 
+    if(pagesjson.hasOwnProperty('details')){
+
+    }
+    if(pagesjson.hasOwnProperty('analysis')){
+
+    }
 }
 
 page.prototype.setfibdata = function(fiblist){
@@ -20,9 +29,9 @@ page.prototype.setfibdata = function(fiblist){
 
 
 page.prototype.setmultiplechoicequestiondata = function(fiblist){
-    for(var i=0;i<fiblist.length;i++){
+    //for(var i=0;i<fiblist.length;i++){
      var multichoiceobj = new multichoice();
-     multichoiceobj.setmultichoicedata(fiblist[i]);
+     multichoiceobj.setmultichoicedata(fiblist);
      this.multiplechaoice.push(multichoiceobj);
-    }
+    //}
  }
